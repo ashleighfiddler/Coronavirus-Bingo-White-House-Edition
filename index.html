@@ -12,11 +12,14 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1><em>Welcome to</em><br>Coronavirus Bingo: White House Edition</h1>
-        <p>Get ready to play!</p>
-        <!-- uses the built-in onclick attribute to call the resetBoard function -->
-        <button onclick="resetBoard()" type="button" class="btn btn-primary btn-lg" name="button">Restart</button>
-      </div>
+        <header> 
+          <img height=60px>
+        </header>
+          <h1><em>Welcome to</em><br>Coronavirus Bingo: White House Edition</h1>
+          <p class="text2">Get ready to play!</p>
+          <!-- uses the built-in onclick attribute to call the resetBoard function -->
+          <button onclick="resetBoard()" type="button" class="btn btn-primary btn-lg" name="button">Restart</button>
+        </div>
       <table>
         <tr>
           <!-- the onclick calls a function called "handleClick" and passes itself to it -->
@@ -24,43 +27,67 @@
             <div class=text>Election Delayed</div>
           </td>
           <td id='top-2left' onclick="handleClick(this)" >
+            <div class=text>White House Death</div></td>
+          <td id='top-middle' onclick="handleClick(this)" >
+            <div class=text>White House False Positive Test</div></td>
+          <td id='top-2right' onclick="handleClick(this)" >
+            <div class=text>New Season of Tiger King</div></td>
+          <td id ='top-right' onclick="handleClick(this)"> 
+            <div class=text>White House Infection</div></td>
+        </tr>
+        <tr>
+          <!-- the onclick calls a function called "handleClick" and passes itself to it -->
+          <td id='2top-left' onclick="handleClick(this)" >
             <div class=text>On-Screen Biden Major Malfunction</div>
-        </td>
-          <td id='top-middle' onclick="handleClick(this)" ></td>
-          <td id='top-2right' onclick="handleClick(this)" ></td>
-          <td id ='top-right' onclick="handleClick(this)"></td>
+          </td>
+          <td id='2top-2left' onclick="handleClick(this)" >
+            <div class=text>White House Infection</div></td>
+          <td id='2top-middle' onclick="handleClick(this)" >
+            <div class=text>120K American deaths</div></td>
+          <td id='2top-2right' onclick="handleClick(this)" >
+            <div class=text>Kelly Anne Infected</div></td>
+          <td id='2top-right' onclick="handleClick(this)">
+            <div class=text>Medicare for All Enacted</div></td>
         </tr>
         <tr>
           <!-- the onclick calls a function called "handleClick" and passes itself to it -->
-          <td id='2top-left' onclick="handleClick(this)" ></td>
-          <td id='2top-2left' onclick="handleClick(this)" ></td>
-          <td id='2top-middle' onclick="handleClick(this)" ></td>
-          <td id='2top-2right' onclick="handleClick(this)" ></td>
-          <td id='2top-right' onclick="handleClick(this)"></td>
+          <td id='middle-left' onclick="handleClick(this)" >
+            <div class=text> President Bernie!</div></td>
+          <td id='middle-2left' onclick="handleClick(this)" >
+            <div class=text> Trump Dies</div></td>
+          <td id='middle-middle' onclick="handleClick(this)" >
+            <div class=image>FREE</div></td>
+          <td id='middle-2right' onclick="handleClick(this)" >
+            <div class=text> Pence Dies</div></td>
+          <td id='middle-right' onclick="handleClick(this)" >
+            <div class=text>New White House Infection</div></td>
         </tr>
         <tr>
           <!-- the onclick calls a function called "handleClick" and passes itself to it -->
-          <td id='middle-left' onclick="handleClick(this)" ></td>
-          <td id='middle-2left' onclick="handleClick(this)" ></td>
-          <td id='middle-middle' onclick="handleClick(this)" ></td>
-          <td id='middle-2right' onclick="handleClick(this)" ></td>
-          <td id='middle-right' onclick="handleClick(this)" ></td>
+          <td id='bottom-left' onclick="handleClick(this)" >
+            <div class=text> McConnell Dies</div></td>
+          <td id='bottom-2left' onclick="handleClick(this)" >
+            <div class=text>White House False Negative</div></td>
+          <td id='bottom-middle' onclick="handleClick(this)">
+            <div class=text>Bizarre Item Hoarded</div></td>
+          <td id='bottom-2right' onclick="handleClick(this)" >
+            <div class=text>First White House Death</div></td>
+          <td id='bottom-right' onclick="handleClick(this)" >
+            <div class=text>Stay at Home Order Reissued</div></td>
         </tr>
         <tr>
           <!-- the onclick calls a function called "handleClick" and passes itself to it -->
-          <td id='bottom-left' onclick="handleClick(this)" ></td>
-          <td id='bottom-2left' onclick="handleClick(this)" ></td>
-          <td id='bottom-middle' onclick="handleClick(this)"></td>
-          <td id='bottom-2right' onclick="handleClick(this)" ></td>
-          <td id='bottom-right' onclick="handleClick(this)" ></td>
-        </tr>
-        <tr>
-          <!-- the onclick calls a function called "handleClick" and passes itself to it -->
-          <td id='bottom-left' onclick="handleClick(this)" ></td>
-          <td id='bottom-2left' onclick="handleClick(this)" ></td>
-          <td id='bottom-middle' onclick="handleClick(this)"></td>
-          <td id='bottom-2right' onclick="handleClick(this)" ></td>
-          <td id='bottom-right' onclick="handleClick(this)" ></td>
+          <td id='bottom-left' onclick="handleClick(this)" >
+            <div class=text>New Stimulus Check</div>
+          </td>
+          <td id='bottom-2left' onclick="handleClick(this)" >
+            <div class=text>Trump Tests Positive</div></td>
+          <td id='bottom-middle' onclick="handleClick(this)">
+            <div class=text>Hydrocloroquine OD in the news</div></td>
+          <td id='bottom-2right' onclick="handleClick(this)" >
+            <div class=text>Another Biden Accuser Comes Forward</div></td>
+          <td id='bottom-right' onclick="handleClick(this)" >
+            <div class=text>Meat Industry Collapse</div></td>
         </tr>
         <!-- @TODO create new rows and cells for the rest of your TTT board. -->
         <!-- @TODO give each new cell an id & an event listener to call the "handleClick" function -->
